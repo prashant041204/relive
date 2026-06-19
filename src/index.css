@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+@theme {
+  --color-primary: #002045;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1a365d;
+  --color-on-primary-container: #86a0cd;
+  
+  --color-secondary: #006a66;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #81f2eb;
+  --color-on-secondary-container: #006f6a;
+  
+  --color-tertiary: #172131;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #2c3647;
+  --color-on-tertiary-container: #959fb3;
+
+  --color-background: #f7fafc;
+  --color-surface: #f7fafc;
+  --color-on-surface: #181c1e;
+  --color-on-surface-variant: #43474e;
+  
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  
+  --color-outline: #e2e8f0;
+  --color-outline-variant: #c4c6cf;
+  
+  --color-surface-container-low: #f1f4f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container: #ebeef0;
+  --color-surface-container-high: #e5e9eb;
+  --color-surface-container-highest: #e0e3e5;
+  --color-surface-variant: #e0e3e5;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  
+  --animate-bounce-slow: bounce 3s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f4f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4c6cf;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a2ab;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.dark-glass-card {
+  background: rgba(0, 32, 69, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 32, 69, 0.08);
+}
